@@ -1,0 +1,132 @@
+ body{
+    background-image: url(../images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left -15%;
+} 
+.first{
+    display: flex;
+    padding: 5% 10%;
+    background-image: url(../images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left 93%;
+    background-size: contain;
+
+}
+.first-left{
+    position: relative;
+}
+.move{
+    position: absolute;
+    top: -16%;
+    left: 15%;
+}
+p{
+    color: hsl(240, 38%, 20%);
+    font-weight: 300;
+    font-size: 32px;
+}
+.second{
+    display: flex;
+    position: relative;
+    padding: 5% 10%;
+    background-image: url(../images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left 92%;
+    background-size: contain;
+
+}
+/* .second-left{
+    /* width: 50%;
+    float: left; */
+    /* padding-top: 10%; */
+    
+/* } */
+
+.second-right{
+    
+    /* width: 50%;
+    float: left; */
+    position: relative;
+}
+.second::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.more{
+    position: absolute;
+    top: 4%;
+    left: 15%;
+}
+.buttons{
+    position: absolute;
+    top: 155%;
+    right: 45%;
+    text-align: center;
+    
+}
+.prev-btn{
+    float: left;
+    width: 9px;
+}
+.next-btn{
+    float: right;
+    width: 9px;
+}
+button{
+    width: 180%;
+    height: 35px;
+    border-radius: 20px;
+    text-align: right;
+    background-color: white;
+
+}
+@media screen and (max-width: 375px){
+    .first{
+        flex-direction: column-reverse;
+        background-position: top left 60%;
+        background-size: 270px;
+    }
+    .image{
+        width: 75%;
+    }
+    .first-left{
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .first-right{
+        width: 100%;
+        text-align: center;
+    }
+    .second{
+        flex-direction: column-reverse;
+        background-position: top left 12%;
+        background-size: 270px;
+    }
+    .second-left{
+        width: 100%;
+        text-align: center;
+        padding-top: 30px
+    }
+    body{
+        background-position: bottom -2% left;
+    }
+    .buttons{
+        top: 110%;
+        right: 50%;
+    }
+    .move{
+        top: 8%;
+        left: 42%;
+        width: 55px;
+    }
+    p{
+        font-size: 19px;
+    }
+    .more{
+        top: 55%;
+        left: 42%;
+        width: 55px;
+    }
+}
