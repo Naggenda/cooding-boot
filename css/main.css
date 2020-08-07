@@ -17,7 +17,7 @@
 }
 .move{
     position: absolute;
-    top: -16%;
+    top: -8%;
     left: 15%;
 }
 p{
@@ -47,6 +47,7 @@ p{
     /* width: 50%;
     float: left; */
     position: relative;
+    text-align: center;
 }
 .second::after{
     clear: both;
@@ -60,8 +61,8 @@ p{
 }
 .buttons{
     position: absolute;
-    top: 155%;
-    right: 45%;
+    top: 110%;
+    right: 33%;
     text-align: center;
     
 }
@@ -80,6 +81,9 @@ button{
     text-align: right;
     background-color: white;
 
+}
+.second{
+    display: none;
 }
 @media screen and (max-width: 375px){
     .first{
@@ -100,8 +104,9 @@ button{
         text-align: center;
     }
     .second{
+        
         flex-direction: column-reverse;
-        background-position: top left 12%;
+        background-position: top left 50%;
         background-size: 270px;
     }
     .second-left{
@@ -113,7 +118,7 @@ button{
         background-position: bottom -2% left;
     }
     .buttons{
-        top: 110%;
+        top: 50%;
         right: 50%;
     }
     .move{
