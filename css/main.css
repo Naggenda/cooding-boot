@@ -61,10 +61,10 @@ p{
 }
 .buttons{
     position: absolute;
-    top: 110%;
+    top: 90%;
     right: 33%;
     text-align: center;
-    
+    width: 60px;
 }
 .prev-btn{
     float: left;
@@ -134,4 +134,9 @@ button{
         left: 42%;
         width: 55px;
     }
+}
+
+header{
+    height: 80vh;
+    position: relative;
 }
